@@ -35,7 +35,7 @@ public class BasicDAO2 {
         return qr.update(conn,sql, param);
     }
 
-    //查询多个Javaean
+    //查询多个JavaBean
     public <T> List<T> getAll(Class<T> clazz, String sql, Object... param) throws Exception{
         return qr.query(sql, new BeanListHandler<T>(clazz), param);
     }

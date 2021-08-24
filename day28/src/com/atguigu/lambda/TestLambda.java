@@ -78,6 +78,8 @@ public class TestLambda {
                 System.out.println("hello");
             }
         }).start();
+
+//        new Thread(() -> System.out.println("hello")).start();
     }
 
 }
